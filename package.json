@@ -1,0 +1,12 @@
+{
+  "name": "bakery-website",
+  "version": "1.0.0",
+  "description": "Сайт пекарни",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+} 

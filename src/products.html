@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог продукции - Пекарня</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="logo">
+                    <img src="images/logo.svg" alt="Логотип пекарни">
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="/" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="/catalog.html" class="nav__link nav__link--active">Каталог</a></li>
+                        <li class="nav__item"><a href="/about.html" class="nav__link">О нас</a></li>
+                        <li class="nav__item"><a href="/contacts.html" class="nav__link">Контакты</a></li>
+                    </ul>
+                    <button class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секция с фильтрами -->
+        <section class="products-filters">
+            <div class="container">
+                <div class="filters">
+                    <button class="filter-btn active" data-category="all">Все</button>
+                    <button class="filter-btn" data-category="bread">Хлеб</button>
+                    <button class="filter-btn" data-category="pastry">Выпечка</button>
+                    <button class="filter-btn" data-category="cakes">Торты</button>
+                    <button class="filter-btn" data-category="pies">Пироги</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция с продуктами -->
+        <section class="products-catalog">
+            <div class="container">
+                <h1 class="section-title">Наша продукция</h1>
+                <div class="products-grid">
+                    <!-- Хлеб -->
+                    <div class="product-card animate-on-scroll" data-category="bread">
+                        <img src="images/bread.jpg" alt="Домашний хлеб" class="product-card__image">
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">Домашний хлеб</h3>
+                            <p class="product-card__description">Свежий хлеб из муки высшего сорта с хрустящей корочкой</p>
+                            <p class="product-card__price">120 ₽</p>
+                            <a href="#" class="product-card__button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="product-card animate-on-scroll" data-category="bread">
+                        <img src="images/rye-bread.jpg" alt="Ржаной хлеб" class="product-card__image">
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">Ржаной хлеб</h3>
+                            <p class="product-card__description">Традиционный ржаной хлеб с солодом</p>
+                            <p class="product-card__price">95 ₽</p>
+                            <a href="#" class="product-card__button">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <!-- Выпечка -->
+                    <div class="product-card animate-on-scroll" data-category="pastry">
+                        <img src="images/croissant.jpg" alt="Круассан" class="product-card__image">
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">Круассан</h3>
+                            <p class="product-card__description">Нежный круассан с масляной начинкой</p>
+                            <p class="product-card__price">85 ₽</p>
+                            <a href="#" class="product-card__button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="product-card animate-on-scroll" data-category="pastry">
+                        <img src="images/bun.jpg" alt="Булочка с корицей" class="product-card__image">
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">Булочка с корицей</h3>
+                            <p class="product-card__description">Ароматная булочка с корицей и сахарной глазурью</p>
+                            <p class="product-card__price">75 ₽</p>
+                            <a href="#" class="product-card__button">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <!-- Торты -->
+                    <div class="product-card animate-on-scroll" data-category="cakes">
+                        <img src="images/cake.jpg" alt="Торт Наполеон" class="product-card__image">
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">Торт Наполеон</h3>
+                            <p class="product-card__description">Классический торт с нежным заварным кремом</p>
+                            <p class="product-card__price">350 ₽</p>
+                            <a href="#" class="product-card__button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="product-card animate-on-scroll" data-category="cakes">
+                        <img src="images/cheesecake.jpg" alt="Чизкейк" class="product-card__image">
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">Чизкейк</h3>
+                            <p class="product-card__description">Нежный чизкейк с ягодным соусом</p>
+                            <p class="product-card__price">400 ₽</p>
+                            <a href="#" class="product-card__button">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <!-- Пироги -->
+                    <div class="product-card animate-on-scroll" data-category="pies">
+                        <img src="images/pie.jpg" alt="Яблочный пирог" class="product-card__image">
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">Яблочный пирог</h3>
+                            <p class="product-card__description">Ароматный пирог с яблоками и корицей</p>
+                            <p class="product-card__price">180 ₽</p>
+                            <a href="#" class="product-card__button">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="product-card animate-on-scroll" data-category="pies">
+                        <img src="images/meat-pie.jpg" alt="Мясной пирог" class="product-card__image">
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">Мясной пирог</h3>
+                            <p class="product-card__description">Сочный пирог с мясной начинкой</p>
+                            <p class="product-card__price">220 ₽</p>
+                            <a href="#" class="product-card__button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__info">
+                    <h3>Контакты</h3>
+                    <p>Адрес: г. Москва, ул. Пекарская, 1</p>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                    <p>Email: info@bakery.ru</p>
+                </div>
+                <div class="footer__hours">
+                    <h3>Часы работы</h3>
+                    <p>Пн-Пт: 8:00 - 20:00</p>
+                    <p>Сб-Вс: 9:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="copyright">© 2024 Пекарня. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
